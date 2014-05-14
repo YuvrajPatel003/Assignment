@@ -44,6 +44,14 @@ int main(int argc, const char * argv[])
     
      */
         
+        StockHolding *obj1 = [[StockHolding alloc]init];
+        
+        [obj1 setPurchaseSharePrice:2.30];
+        [obj1 setCurrentSharePrice:4.50];
+        [obj1 setNoOfShares:40];
+        NSLog(@"Cost of Object 1 :%f",[obj1 CostInDollars]);
+        NSLog(@"Value of Object 1 :%f",[obj1 ValueInDollars]);
+        
         ForeignStockHolding *fobj1 = [[ForeignStockHolding alloc]init];
         [fobj1 setPurchaseSharePrice:2.30];
         [fobj1 setCurrentSharePrice:4.50];
